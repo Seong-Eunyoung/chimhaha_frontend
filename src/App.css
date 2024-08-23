@@ -1,0 +1,378 @@
+@font-face {
+  font-family: GangwonEduPowerExtraBoldA;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff) format("woff")
+}
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* Reset default styling */
+body, h1, div, span {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body.board {
+  font-family: 'Pretendard-Regular';
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: 'Pretendard-Regular';
+  background-color: #fff;
+  color: #333;
+}
+
+/* Sub Header Section */
+#sub {
+  background-color: #ffffff;
+  font-family: 'Pretendard-Regular';
+  text-align: right;
+  border-bottom: 1px solid #cecece ;
+}
+
+#sub ul {
+  list-style: none;
+  padding-right: 20px;
+}
+
+#sub li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+#sub a {
+  color: #333;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+#sub a:hover {
+  color: #ddd;
+}
+
+/* Main Header Section */
+#main {
+  text-align: center;
+  padding-top:35px;
+}
+
+#main a{
+  text-decoration: none;
+}
+
+.logo .title{
+  font-family: 'GangwonEduPowerExtraBoldA';
+  font-size: 3em;
+  color: #000;
+  text-decoration: none;
+}
+
+/* Navigation Section */
+#nav {
+  font-family: 'Pretendard-Regular';
+  background-color: #1ca8af;
+  margin: 0px;
+}
+
+#nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: left;
+  padding: 0;
+}
+
+#nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+#nav a:hover {
+  color: #ddd;
+}
+
+.menu {
+  font-weight: 600;
+  padding: 15px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.menu:hover {
+  background-color: #1c878d;
+  border-radius: 0px;
+  padding: 15px 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+  #sub ul {
+      padding-right: 10px;
+  }
+
+  #sub li {
+      margin-left: 10px;
+      font-size: 0.8em;
+  }
+
+  .logo .title {
+      font-size: 2.5em;
+  }
+
+  #nav ul {
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+  }
+
+}
+
+/* Stream Section Styling */
+.stream {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 0px auto;
+  padding-bottom: 30px;
+  background-color: #fff;
+}
+
+.youtube {
+  flex: 1;
+  max-width: 330px;
+  margin: 0 3px;
+  text-align: center;
+}
+
+.youtube h2.title {
+  font-size: 1.2em;
+  color: #444;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.youtube h2.title span {
+  display: flex;
+  align-items: left;
+  padding-left: 10px;
+  justify-content: left;
+}
+
+.youtube h2.title img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.youtube h2.title a {
+  text-decoration: none;
+  color: #444;
+  transition: color 0.3s;
+}
+
+
+.youtube iframe {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Title Section */
+#title h1 {
+  font-size: 1.2em;
+  text-align: left;
+  margin-left: 20px;
+  color: #444;
+}
+
+/* Board List Section */
+#boardList {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+article#article {
+  margin-top: 20px;
+}
+
+/* Sub Header for Category Navigation */
+.sub .back {
+  padding-bottom:10px;
+}
+.sub .back a {
+  font-weight: bold;
+  font-size: 1.2em;
+  padding-left: 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Individual Board Item */
+.item {
+  padding: 15px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.item:last-child {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.item a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Title and Category Container */
+.titleContainer {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+
+.titleContainer .category {
+  font-size: 0.9em;
+  color: #888;
+  background-color: #f0f0f0;
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.titleContainer .title {
+  font-weight: bold;
+  font-size: 1.0em;
+  padding-left: 10px;
+  color: #333;
+}
+
+/* Etc Information */
+.etc {
+  display: flex;
+  align-items: center;
+  font-size: 0.85em;
+  color: #777;
+}
+
+.etc .nickName {
+  font-weight: bold;
+  margin-right: 0px;
+}
+
+.etc .dot {
+  width: 4px;
+  height: 4px;
+  background-color: #ccc ;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.etc .datetime,
+.etc .viewCount {
+  margin-right: 0px;
+}
+
+/* Content Section */
+.content {
+  margin-bottom: 20px;
+  font-size: 1em;
+  line-height: 1.8;
+  color: #333;
+}
+
+.content p {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+/* File List Section */
+.file_list p {
+  margin: 5px 20px;
+}
+
+.file_list a {
+  text-decoration: none;
+  color: #8d8d8d;
+  font-size: 0.9em;
+}
+
+.file_list a:hover {
+  text-decoration: underline;
+}
+
+/* No Results Message */
+#boardList tr {
+  text-align: center;
+  color: #888;
+  font-size: 1em;
+  padding: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+  .titleContainter {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .titleContainter .category,
+  .titleContainter .title {
+      font-size: 1em;
+  }
+
+  .etc {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .etc .nickName,
+  .etc .datetime,
+  .etc .viewCount {
+      margin-right: 0;
+      margin-bottom: 5px;
+  }
+
+  .etc .dot {
+      display: none;
+  }
+}
+
+
+.btn {
+  display: block;
+  font-family: 'Pretendard-Regular';
+  width: 97%;
+  padding: 12px;
+  background-color: #e6e6e6;
+  color: #333;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 15px;
+  padding-inline: 0px;
+  padding-block: 10px;
+}
+
+.btn:hover {
+  background-color: #c5c5c5;
+}
+a {
+  text-decoration: none;
+  
+}
+
+
+#stone {
+  text-align: center;
+  padding: 30px;
+}
